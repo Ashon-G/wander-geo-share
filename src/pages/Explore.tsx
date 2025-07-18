@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Search, Filter, Trending, MapPin } from "lucide-react";
+import { Search, Filter, TrendingUp, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import PhotoCard from "@/components/PhotoCard";
@@ -57,7 +57,7 @@ const Explore = () => {
       <div className="px-4 py-3 border-b border-border">
         <div className="flex gap-2 overflow-x-auto">
           <Button variant="default" size="sm" className="whitespace-nowrap">
-            <Trending className="h-4 w-4 mr-1" />
+            <TrendingUp className="h-4 w-4 mr-1" />
             Trending
           </Button>
           <Button variant="outline" size="sm" className="whitespace-nowrap">
