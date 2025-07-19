@@ -11,8 +11,8 @@ const Layout = ({ children }: LayoutProps) => {
   const hideNavigation = location.pathname === "/create";
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      <main className="flex-1 pb-16">
+    <div className="min-h-screen bg-background flex flex-col touch-pan-y">
+      <main className="flex-1 pb-16 safe-area-inset">
         {children}
       </main>
       {!hideNavigation && <BottomNavigation />}

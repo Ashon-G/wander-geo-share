@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router-dom";
-import { Compass, MapPin, Home, Plus, User } from "lucide-react";
+import { Compass, MapPin, Home, Plus, User, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const BottomNavigation = () => {
@@ -8,6 +8,7 @@ const BottomNavigation = () => {
     { to: "/", icon: Compass, label: "Explore" },
     { to: "/map", icon: MapPin, label: "Map" },
     { to: "/feed", icon: Home, label: "Feed" },
+    { to: "/messages", icon: MessageCircle, label: "Messages" },
     { to: "/create", icon: Plus, label: "Create" },
     { to: "/profile", icon: User, label: "Profile" },
   ];
